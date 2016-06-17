@@ -101,11 +101,11 @@ body {
 }
 
 h1,
-h2 {
+legend {
   color: #4f8ece;
 }
 
-h2 {
+legend {
   padding: 20px 0px 0px 0px;
 }
 .custom-circle-counter {
@@ -141,16 +141,16 @@ h2 {
 }
 
 .wraper h1,
-h2,
+legend,
 p,
 fieldset,
 button {
   margin: 0px 0px 0px 15px;
 }
 
-fieldset {
+.fieldset {
   padding: 5px 20px 30px 20px;
-  margin: 0px 10px 0px 15px;
+  margin: 0px 10px 0px 0px;
   background-color: #d3d3d3;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -178,7 +178,7 @@ input {
 }
 
 .creditCardNumber {
-  width: 45%;
+  width: 40%;
   margin: 0px 7px 0px 0px;
 }
 
@@ -187,8 +187,27 @@ input {
   vertical-align: middle;
 }
 
-img {
+.img {
   opacity: 0.5;
+  vertical-align: text-top;
+  color: transparent;
+  width: 48px;
+}
+
+#amexLabel {
+  background: url("../img/cc-icon-amex.png") no-repeat;
+}
+
+#visaLabel {
+  background: url("../img/cc-icon-visa.png") no-repeat;
+}
+
+#discoverLabel {
+  background: url("../img/cc-icon-discover.png") no-repeat;
+}
+
+#masterCardLabel {
+  background: url("../img/cc-icon-mastercard.png") no-repeat;
 }
 
 .websiteAddress {
@@ -266,6 +285,11 @@ button:disabled {
 
 #revealPassword { visibility: hidden; }
 
+legend {
+  display: block;
+  font-size: 1.5em;
+  margin: 0px 10px 0px 0px;
+  font-weight: bold; }
 
 
 

@@ -44,11 +44,11 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 $(function() {
   $ ('#cardNumber').validateCreditCard (function (result) {
     if (result.card_type && result.length_valid && result.valid) {
-      $('#'+result.card_type.name).css('opacity', 1);
+      $('#'+result.card_type.name+'Label').css('opacity', 1);
       document.getElementById("submit").disabled = false;
 
     } else {
-      $('img').css('opacity', 0.5);
+      $('.img').css('opacity', 0.5);
       document.getElementById("submit").disabled = true;
     }
   },{ accept: ['visa', 'mastercard', 'discover', 'amex'] });

@@ -37,62 +37,67 @@
     <form id="formToValidate" method="post">
       <ol class="custom-circle-counter">
         <li>
-          <h2>Pick a website address.</h2>
           <fieldset>
-            <label for="website" id="websiteLabel">Website address:</label>
-            <div class="websiteAddress">
-              <input id="website" name="website" type="text" required="required"
-                     placeholder="website name" aria-required="true"
-                     aria-labelledby="websiteLabel"
-              />
-              <span>.free-websites.com</span>
+            <legend>Pick a website address</legend>
+            <div class="fieldset">
+              <label for="website" id="websiteLabel">Website address:</label>
+              <div class="websiteAddress">
+                <input id="website" name="website" type="text" required="required"
+                       placeholder="website name" aria-required="true"
+                       aria-labelledby="websiteLabel"
+                />
+                <span>.free-websites.com</span>
+              </div>
             </div>
           </fieldset>
         </li>
         <li>
-          <h2>Create an account.</h2>
           <div>
             <fieldset>
-              <label for="fullName" id="fullNameLabel">Full name:</label>
-              <div>
-                <input id="fullName" name="fullName" type="text"
-                       placeholder="Full name" aria-required="true"
-                       aria-labelledby="fullNameLabel" required="required"
-                />
-              </div>
-              <label for="emailAddress" id="emailAddressLabel">
-                Email address:
-              </label>
-              <div>
-                <input id="emailAddress" name="emailAddress"
-                       placeholder="Email.." aria-required="true"
-                       aria-labelledby="emailAddressLabel" type="email"
-                       required="required"
-                />
-              </div>
-              <label for="password" id="passwordLabel">Password:</label>
-              <div>
-                <input id="password" name="password" type="password"
-                       placeholder="Password" aria-required="true"
-                       aria-labelledby="passwordLabel" autocomplete="off"
-                       required="required"
-                />
-              </div>
-              <div id="revealPassword">
-                <input type="checkbox" value="show" name="showPassowrd"
-                       id="showPassowrd" aria-labelledby="showPassowrd"
-                       class="check_box">
-                <label id="jsShowPassword" for="showPassowrd" tabindex="0"></label>
-                <span for="showPassowrd" id="showPassowrdLabel">
-                  Reveal password
-                </span>
+              <legend>Create an account.</legend>
+              <div class="fieldset">
+                <label for="fullName" id="fullNameLabel">Full name:</label>
+                <div>
+                  <input id="fullName" name="fullName" type="text"
+                         placeholder="Full name" aria-required="true"
+                         aria-labelledby="fullNameLabel" required="required"
+                  />
+                </div>
+                <label for="emailAddress" id="emailAddressLabel">
+                  Email address:
+                </label>
+                <div>
+                  <input id="emailAddress" name="emailAddress"
+                         placeholder="Email.." aria-required="true"
+                         aria-labelledby="emailAddressLabel" type="email"
+                         required="required"
+                  />
+                </div>
+                <label for="password" id="passwordLabel">Password:</label>
+                <div>
+                  <input id="password" name="password" type="password"
+                         placeholder="Password" aria-required="true"
+                         aria-labelledby="passwordLabel" autocomplete="off"
+                         required="required"
+                  />
+                </div>
+                <div id="revealPassword">
+                  <input type="checkbox" value="show" name="showPassowrd"
+                         id="showPassowrd" aria-labelledby="showPassowrd"
+                         class="check_box">
+                  <label id="jsShowPassword" for="showPassowrd" tabindex="0"></label>
+                  <label for="showPassowrd" id="showPassowrdLabel">
+                    Reveal password
+                  </label>
+                </div>
               </div>
             </fieldset>
           </div>
         </li>
         <li>
-          <h2>Enter your payment info.</h2>
           <fieldset>
+            <legend>Enter your payment info.</legend>
+            <div class="fieldset">
             <label for="cardNumber" id="cardNumberLabel">
               Credit card number:
             </label>
@@ -103,17 +108,17 @@
                      placeholder="4000 0000 0000 0002" class="creditCardNumber"
               />
               <input type="radio" class="radioButton" name="creditCard"
-                     value="visa" required="required">
-              <img src="img/cc-icon-visa.png" alt="visa" id="visa">
+                     value="visa" id="visa" required="required">
+              <label class="img" id="visaLabel" for="visa">Visa</label>
               <input type="radio" class="radioButton" value="masterCard"
-                     name="creditCard">
-              <img src="img/cc-icon-mastercard.png" alt="masterCard" id="mastercard">
+                     name="creditCard" id="masterCard">
+              <label class="img" id="masterCardLabel" for="masterCard">Master</label>
               <input type="radio" class="radioButton" value="discover"
-                     name="creditCard">
-              <img src="img/cc-icon-discover.png" alt="discover" id="discover">
+                     name="creditCard" id="discover">
+              <label for="discover" id="discoverLabel" class="img">Discover</label>
               <input type="radio" class="radioButton" value="amex"
-                     name="creditCard">
-              <img src="img/cc-icon-amex.png" id="amex" alt="amex">
+                     name="creditCard" id="amex">
+              <label for="amex" id="amexLabel" class="img">Amex</label>
             </div>
             <label for="securityCode" id="securityCodeLabel" class="firstPart">
               Security code:
@@ -164,7 +169,7 @@
                 <option value="2029">2029</option>
                 <option value="2030">2030</option>
               </select>
-            </div>
+            </div></div>
           </fieldset>
         </li>
       </ol>
