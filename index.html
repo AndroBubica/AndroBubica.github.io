@@ -38,7 +38,7 @@
       <ol class="custom-circle-counter">
         <li>
           <fieldset>
-            <legend>Pick a website address</legend>
+            <legend>Pick a website address.</legend>
             <div class="fieldset">
               <label for="website" id="websiteLabel">Website address:</label>
               <div class="websiteAddress">
@@ -85,8 +85,11 @@
                   <input type="checkbox" value="show" name="showPassowrd"
                          id="showPassowrd" aria-labelledby="showPassowrd"
                          class="check_box">
-                  <label id="jsShowPassword" for="showPassowrd" tabindex="0"></label>
-                  <label for="showPassowrd" id="showPassowrdLabel">
+                  <label id="jsShowPassword" for="showPassowrd" tabindex="0"
+                         class="inlineLabel">
+
+                  </label>
+                  <label for="showPassowrd" id="showPassowrdLabel" class="inlineLabel">
                     Reveal password
                   </label>
                 </div>
@@ -120,10 +123,11 @@
                      name="creditCard" id="amex">
               <label for="amex" id="amexLabel" class="img">Amex</label>
             </div>
-            <label for="securityCode" id="securityCodeLabel" class="firstPart">
+            <label for="securityCode" id="securityCodeLabel"
+                   class="firstPart inlineLabel">
               Security code:
             </label>
-            <label id="expirationDateLabel" class="secondPart">
+            <label id="expirationDateLabel" class="secondPart inlineLabel">
               Expiration date:
             </label>
             <div>
@@ -131,8 +135,7 @@
                      id="securityCode" name="securityCode" autocomplete="off"
                      required="required" aria-required="true" placeholder="123"
                      class="securityCode"
-              />
-              <select name="creditCardMonth" required="required"
+              /><select name="creditCardMonth" required="required"
                       aria-required="true" aria-labelledby="expirationDateLabel"
                       title="credit card expiration month" class="creditCardMonth" >
                 <option value="01">01 - January</option>
@@ -147,9 +150,7 @@
                 <option value="10">10 - October</option>
                 <option value="11">11 - November</option>
                 <option value="12">12 - December</option>
-              </select>
-              /
-              <select name="creditCardYear" required="required"
+              </select><select name="creditCardYear" required="required"
                       aria-required="true" aria-labelledby="expirationDateLabel"
                       title="credit card expiration year" class="creditCardYear"
                       id="creditCardYear">

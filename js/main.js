@@ -12,7 +12,8 @@ var onLoad = function() {
   var radioButton = document.getElementsByName("creditCard");
   radioButton[0].required = false;
   for (var i = 0; i < radioButton.length; ++i) {
-    radioButton[i].style.visibility = 'hidden';
+    // radioButton[i].style.visibility = 'hidden';
+    radioButton[i].style.display = 'none';
   }
   document.getElementById("submit").disabled = true;
 };
@@ -44,6 +45,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 $(function() {
   $ ('#cardNumber').validateCreditCard (function (result) {
     if (result.card_type && result.length_valid && result.valid) {
+      console.log(result.card_type.name);
       $('#'+result.card_type.name+'Label').css('opacity', 1);
       document.getElementById("submit").disabled = false;
 

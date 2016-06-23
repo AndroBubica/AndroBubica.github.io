@@ -11,9 +11,9 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 /*
@@ -25,13 +25,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
@@ -39,12 +39,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -59,7 +59,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
@@ -67,9 +67,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -77,7 +77,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
@@ -85,28 +85,47 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  min-width: 385px;
+.wraper {
+  width: 500px;
+  border: 20px solid #A8CCD5;
+  padding: 0px 10px
 }
 
 h1,
 legend {
-  color: #4f8ece;
+  color: #4c8dd0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 36px;
 }
 
 legend {
-  padding: 20px 0px 0px 0px;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+p,
+label,
+span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #646e72;
+}
+
+hr {
+  margin: 0px 20px 0px 20px;
 }
 .custom-circle-counter {
   margin-left: 0;
@@ -121,93 +140,131 @@ legend {
 .custom-circle-counter li::before {
   content: counter(circle-counter);
   margin-right: 5px;
-  font-size: 80%;
+  font-size: 18px;
+  font-family: Georgia, serif;
   background-color: white;
-  color: black;
-  font-weight: normal;
+  color: #4c8dd0;
+  font-weight: bold;
   padding: 3px 8px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   position: absolute;
-  left: 6px;
-  margin-top: 22px;
+  left: 8px;
+  margin-top: -5px;
 }
 
-.wraper {
-  width: 550px;
-  border: 20px solid #A8CCD5;
-  padding: 20px 25px 30px 20px;
-}
-
-.wraper h1,
-legend,
+h1,
 p,
-fieldset,
-button {
-  margin: 0px 0px 0px 15px;
+fieldset {
+  /*   width: 440px; */
+  padding: 0px 30px 0px 30px;
 }
 
-.fieldset {
-  padding: 5px 20px 30px 20px;
-  margin: 0px 10px 0px 0px;
-  background-color: #d3d3d3;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+fieldset {
+  margin: 0px 0px 25px 0px;
 }
 
-label {
-  display: inline-block;
-  padding: 15px 0px 0px 0px;
+fieldset > div {
+  padding: 0px 20px 20px 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #f2f3f4;
+  overflow: hidden;
 }
 
 input,
 select {
   height: 40px;
-  border: 1px solid #6FA2D5;
+  border: 1px solid #4c8dd0;
+  border-radius: 3px;
+  margin: 0px 0px 10px 0px;
 }
 
 input {
   width: 100%;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  padding: 0px 0px 0px 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 0px 0px 0px 10px;
+  box-shadow: inset rgba(100, 110, 114, 0.33) 0 2px 3px;
+}
+
+select {
+  box-shadow: rgba(100, 110, 114, 0.33) 0 2px 3px;
+}
+
+label {
+  display:block;
+  margin: 20px 0px 0px 0px;
+}
+
+.inlineLabel {
+  display: inline-block;
+  margin: 0px 0px 0px 0px;
 }
 
 .creditCardNumber {
-  width: 40%;
-  margin: 0px 7px 0px 0px;
+  width: 218px;
+  margin: 0px 4px 30px 0px;
 }
-
-.radioButton {
-  width: auto;
-  vertical-align: middle;
-}
-
 .img {
-  opacity: 0.5;
-  vertical-align: text-top;
+  display: inline-block;
   color: transparent;
-  width: 48px;
 }
 
-#amexLabel {
+.radioButton + label {
+  opacity: 0.5;
+}
+
+.radioButton:checked + label {
+  opacity: 1;
+}
+.radioButton + #amexLabel {
   background: url("../img/cc-icon-amex.png") no-repeat;
+  height: 24px;
+  width: 40px;
+  display: inline-block;
 }
 
-#visaLabel {
+.radioButton + #visaLabel {
   background: url("../img/cc-icon-visa.png") no-repeat;
+  height: 24px;
+  width: 40px;
+  display: inline-block;
 }
 
-#discoverLabel {
+.radioButton + #discoverLabel {
   background: url("../img/cc-icon-discover.png") no-repeat;
+  height: 24px;
+  width: 40px;
+  display: inline-block;
 }
 
-#masterCardLabel {
+.radioButton + #masterCardLabel {
   background: url("../img/cc-icon-mastercard.png") no-repeat;
+  height: 24px;
+  width: 40px;
+  display: inline-block;
+}
+
+.securityCode {
+  width: 130px;
+  margin: 0px 20px 0px 0px;
+}
+
+.secondPart {
+  margin: 0px 0px 0px 56px;
+}
+
+.creditCardMonth {
+  width: 160px;
+  margin: 0px 10px 0px 0px
+}
+
+.creditCardYear {
+  width: 80px;
 }
 
 .websiteAddress {
@@ -216,8 +273,8 @@ input {
 
 .websiteAddress span {
   position: absolute;
-  top: 1px;
-  right: 1px;
+  top: 0px;
+  right: 0px;
   background-color: #F2F3F4;
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -225,7 +282,30 @@ input {
   -moz-border-radius-topright: 3px;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
-  padding: 8px 20px;
+  padding: 10px 10px 9px 10px;
+  border-top:    1px solid #4c8dd0;
+  border-right: 1px solid #4c8dd0;
+  border-bottom: 1px solid #4c8dd0;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  background-color: #4f8ece;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+}
+.submitButton {
+  margin: 30px 30px 30px 30px;
+}
+
+button:disabled {
+  opacity: 0.5;
 }
 
 #revealPassword input {
@@ -249,57 +329,11 @@ input {
   padding: 0px 0px 0px 0px;
 }
 
-
-.securityCode {
-  vertical-align: top;
-  width: 39%;
+.check_box {
+  height: auto;
+  width: auto;
+  display: inline-block;
 }
-
-.creditCardMonth {
-  width: 38%;
-}
-
-.creditCardYear {
-  width: 19%;
-}
-
-.submitButton {
-  margin: 0px 10px 0px 0px;
-  padding: 10px 15px 0px 0px;
-  color: #ffffff;
-}
-
-button {
-  width: 100%;
-  height: 40px;
-  background-color: #4f8ece;
-  border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 3px;
-}
-
-button:disabled {
-  opacity: 0.5;
-}
-
-#revealPassword { visibility: hidden; }
-
-legend {
-  display: block;
-  font-size: 1.5em;
-  margin: 0px 10px 0px 0px;
-  font-weight: bold; }
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
@@ -311,7 +345,7 @@ legend {
  */
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 /*
@@ -320,14 +354,14 @@ legend {
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /*
@@ -338,12 +372,12 @@ legend {
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
 
 /*
@@ -351,7 +385,7 @@ legend {
  */
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -368,12 +402,12 @@ legend {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /* ==========================================================================
@@ -383,14 +417,14 @@ legend {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -400,74 +434,74 @@ legend {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
 
-    thead {
-        display: table-header-group;
-    }
+  thead {
+    display: table-header-group;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    img {
-        max-width: 100% !important;
-    }
+  img {
+    max-width: 100% !important;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
