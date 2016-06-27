@@ -105,10 +105,11 @@
               Credit card number:
             </label>
             <div>
-              <input type="number" name="cardNumber" required="required"
+              <input type="text" name="cardNumber" required="required"
                      id="cardNumber" autocomplete="off"
                      aria-required="true" aria-labelledby="cardNumberLabel"
                      placeholder="4000 0000 0000 0002" class="creditCardNumber"
+                     pattern="[0-9]{13,16}"
               />
               <input type="radio" class="radioButton" name="creditCard"
                      value="visa" id="visa" required="required">
@@ -138,6 +139,7 @@
               /><select name="creditCardMonth" required="required"
                       aria-required="true" aria-labelledby="expirationDateLabel"
                       title="credit card expiration month" class="creditCardMonth" >
+                <option value="">Month</option>
                 <option value="01">01 - January</option>
                 <option value="02">02 - February</option>
                 <option value="03">03 - March</option>
@@ -154,6 +156,7 @@
                       aria-required="true" aria-labelledby="expirationDateLabel"
                       title="credit card expiration year" class="creditCardYear"
                       id="creditCardYear">
+                <option value="">Year</option>
                 <option value="2016">2016</option>
                 <option value="2017">2017</option>
                 <option value="2018">2018</option>
